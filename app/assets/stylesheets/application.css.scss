@@ -14,13 +14,10 @@
  **= require_self
  */
 
-
 /***Misc Tags***/
 
 * {
-
   margin: 0px;
-
   padding: 0px;
 }
 body {
@@ -101,10 +98,9 @@ input, select {
   background-repeat: no-repeat;
 }
 .menu {
- // position: relative;
-
- top: 50px;
- margin-bottom: 30px;
+  // position: relative;
+  top: 50px;
+  margin-bottom: 30px;
 }
 .menu2 {
   position: relative;
@@ -136,8 +132,8 @@ input, select {
   //bottom: 75px;
 }
 #emailvalid {
-  width: 172px !important; 
-// position: relative;
+  width: 172px !important;
+  // position: relative;
   //bottom: 75px;
 }
 .chat_form {
@@ -151,29 +147,27 @@ ul.chat_list li {
 }
 #form {
   float: left;
-
 }
 #flash {
- position: fixed;
- right: 20px;
- top: 20px;
- z-index: 1000;
-
- .message {
-  padding: 0;
-  background-image: none;
-}
-.flash_notice {
-  position: relative;
-  background-color: #ABBB30;
-  border-color: #6F7B13;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+  .message {
+    padding: 0;
+    background-image: none;
+ }
+ .flash_notice {
+   position: relative;
+   background-color: #ABBB30;
+   border-color: #6F7B13;
 }
 .flash_alert {
   position: relative;
   background-color: #F24A4A;
   border-color: #A90A2C;
-  }
 }
- .section-left {
-      width: 60%;
-  }
+}
+.section-left {
+  width: 60%;
+}

@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
 
-
 	def user_chat
 
 	end
@@ -8,5 +7,4 @@ class UsersController < ApplicationController
 	def employee_chat
 
 	end
-
 end

@@ -1,5 +1,3 @@
-
-
 <p class="label">
   To start communication,please,provide following data:
 </p>
@@ -9,13 +7,15 @@
   {:placeholder => "username"}) %>
   <span id="uservalid" style="display:none"></span>
 </div>
+
 <div class="menu">
  <%= text_field_tag(:email, nil ,  
  {:placeholder => "email"}) %>
  <span id="emailvalid" style="display:none;"></span>
 </div>
+
 <%= select_tag(:department, options_for_select([
   ['User', Role::USER_ID], ['Employee', Role::EMPLOYEE_ID]], Role::USER_ID ), :class => "select") %>
 
-<%= submit_tag("Submit", :class => "submit", :id => "button") %>
-<% end %>
+  <%= submit_tag("Submit", :class => "submit", :id => "button") %>
+  <% end %>

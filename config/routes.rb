@@ -11,7 +11,6 @@ Rails.application.routes.draw do
       get 'user-chat' => "users#user_chat", :as => "user_chat"
       get 'employee-chat' => "users#employee_chat", :as => "employee_chat"
     end
-
   end
   resources :roles
 
@@ -34,6 +33,7 @@ Rails.application.routes.draw do
   #     collection do
   #       get 'sold'
   #     end
+  #     
   #   end
 
   # Example resource route with sub-resources:

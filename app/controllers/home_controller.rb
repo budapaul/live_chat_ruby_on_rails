@@ -7,7 +7,7 @@ class HomeController < ApplicationController
 		@user = User.find_or_create_by(
 			:name => params[:username], 
 			:email => params[:email], 
-			:role_id => params[:department].to_i
+			:role_id => params[:department].to_i 
 			)
 		if @user.valid?
 			redirect_to @user.is_employee? ? employee_chat_user_path(@user) : user_chat_user_path(@user)

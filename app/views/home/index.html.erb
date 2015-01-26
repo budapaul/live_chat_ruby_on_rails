@@ -16,6 +16,6 @@
 
 <%= select_tag(:department, options_for_select([
   ['User', Role::USER_ID], ['Employee', Role::EMPLOYEE_ID]], Role::USER_ID ), :class => "select") %>
-
   <%= submit_tag("Submit", :class => "submit", :id => "button") %>
   <% end %>
+

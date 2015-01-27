@@ -172,8 +172,12 @@ ul.chat_list li {
   position: relative;
   background-color: #F24A4A;
   border-color: #A90A2C;
-  }
 }
- .section-left {
-      width: 60%;
-  }
+}
+.section-left {
+  width: 60%;
+}
+.validation_error{
+  color:red;
+  font-weight: bold;
+}

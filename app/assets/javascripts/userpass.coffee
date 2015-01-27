@@ -3,15 +3,14 @@
 $ ->
   $("#button").click( 
     (e) ->
-      username_input = $('#username')
+      username_input = $('#user_username')
       username = username_input.val()
-      email_input = $('#email')
+      email_input = $('#user_email')
       email = email_input.val()
       error = ""
       validations = new Validations()
-     
-
-      if (validations.is_required(username))
+      
+      if validations.is_required(username)
         validations.hide_error("uservalid")
       else
         error = " Username is empty\n";
@@ -22,7 +21,7 @@ $ ->
       else
         error = "The email is invalid";
         validations.show_error("emailvalid", error)
-      
+     
       if (error.trim() != '')
         e.preventDefault()
         return false

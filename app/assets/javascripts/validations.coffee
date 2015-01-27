@@ -1,5 +1,5 @@
 class window.Validations
-  is_required: (string) -> 
+  is_required: (string) ->
     if string.trim() == ""
       return false
     else
@@ -7,7 +7,7 @@ class window.Validations
 
   is_valid_email: (string) ->
     a = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
-    if (!this.is_required(string) || !a.test(string))
+    if (!@.is_required(string) || !a.test(string))
       return false
     else
       return true
@@ -17,9 +17,9 @@ class window.Validations
     span.css("display", "none")
   
   show_error: (id, message) ->
-    span = $("#" + id);
+    span = $("#" + id)
     if (message.trim() != '')
-      span.html message;
+      span.html message
     span.css
       background: "red",
       display: "block",

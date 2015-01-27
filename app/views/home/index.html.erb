@@ -1,21 +1,23 @@
 <p class="label">
-  To start communication,please,provide following data:
+	To start communication,please,provide following data:
 </p>
-<%= form_tag(go_to_chat_path, method: "post") do %>
+<%= form_for(@user, url:  go_to_chat_path, method: "post") do |f| %>
 <div class="menu">
-  <%= text_field_tag(:username, nil ,  
-  {:placeholder => "username"}) %>
-  <span id="uservalid" style="display:none"></span>
+	<%=f.text_field(:username, :value => nil ,:placeholder => "username") %>
+	<span id="uservalid" style="display:none"></span>
+	<%= show_model_attr_error(@user, "username") %>
 </div>
 
 <div class="menu">
- <%= text_field_tag(:email, nil ,  
- {:placeholder => "email"}) %>
- <span id="emailvalid" style="display:none;"></span>
+	<%= f.text_field(:email, :value => nil ,  :placeholder => "email") %>
+	<span id="emailvalid" style="display:none;"></span>
+	<%= show_model_attr_error(@user, "email") %>
 </div>
 
-<%= select_tag(:department, options_for_select([
-  ['User', Role::USER_ID], ['Employee', Role::EMPLOYEE_ID]], Role::USER_ID ), :class => "select") %>
-  <%= submit_tag("Submit", :class => "submit", :id => "button") %>
-  <% end %>
+<%= f.select(:role_id, options_for_select([
+	['User', Role::USER_ID], ['Employee', Role::EMPLOYEE_ID]], Role::USER_ID ), :class => "select") %>
+	<%= show_model_attr_error(@user, "role_id") %>
+	<%= submit_tag("Submit", :class => "submit", :id => "button") %>
+	<% end %>
+
 

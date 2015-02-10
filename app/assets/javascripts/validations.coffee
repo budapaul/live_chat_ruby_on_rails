@@ -12,14 +12,15 @@ class window.Validations
     else
       return true
 
-  hide_error: (id, message) ->
+
+  hide_error: (id) ->
     span = $('#' + id)
     span.css("display", "none")
   
   show_error: (id, message) ->
     span = $("#" + id)
     if (message.trim() != '')
-      span.html message
+      span.html message.trim()
     span.css
       background: "red",
       display: "block",

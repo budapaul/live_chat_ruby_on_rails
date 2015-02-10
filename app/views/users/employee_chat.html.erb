@@ -4,6 +4,7 @@
   <%= render :partial => "users/chat_list" %>
   <form action="javascript:void(0)" method="post" class="chat_form">
     <span id="chat_error" style="display:none;"></span>
+   
     <input type="hidden" id="chat_user_id" value="<%= @user.id %>">
     <textarea class="mesaj" type="text" id="textarea" > </textarea>
     <input type="submit" value="Send" class="button_submit " id="sendchatpage" />

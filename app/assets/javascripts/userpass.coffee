@@ -21,7 +21,7 @@ $ ->
       else
         error = "The email is invalid";
         validations.show_error("emailvalid", error)
-     
+        
       if (error.trim() != '')
         e.preventDefault()
         return false

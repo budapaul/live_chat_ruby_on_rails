@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'home#index'
   post 'go-to-chat' => "home#go_to_chat", :as => "go_to_chat"
+  post 'add-message' => "message#add_message", :as => "add_message"
   
   resources :users do
     member do

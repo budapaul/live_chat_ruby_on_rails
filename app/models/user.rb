@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	@attrs = [:name, :role_id, :email]
+	@attrs = [:name, :role_id, :email, :id]
 
 	attr_accessible *@attrs
 

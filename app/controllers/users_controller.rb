@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   end
 
   def find_user
-    @user = User.where(:id => params[:id].to_i)
+    @user = User.find_by(:id => params[:id].to_i)
     if @user.blank? || (params[:id]  =~ /^[0-9]+$/).blank?
       redirect_to(root_path, :alert => "User does not exist!!") and return
     end

@@ -31,6 +31,7 @@ group :development, :test do
   gem 'byebug'
   gem "jasminerice", :git => 'https://github.com/bradphelan/jasminerice.git'
   gem 'jasmine'
+  gem 'jasmine-jquery-rails'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 

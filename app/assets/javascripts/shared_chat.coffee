@@ -23,7 +23,9 @@ class window.ChatPage extends window.Validations
 
 window.add_message_chat = (id_list, message, color) ->
    ul = $("#" + id_list)
-   li = $("<li></li>").html(message).css(color: color)
+   li = $("<li></li>").html(message)
+   li.css(color: color)
+   console.log(li)
    li.appendTo(ul)
    return true
 

@@ -73,6 +73,7 @@ GEM
       rack (>= 1.2.1)
       rake
     jasmine-core (2.2.0)
+    jasmine-jquery-rails (2.0.3)
     jbuilder (2.2.6)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -170,6 +171,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   execjs
   jasmine
+  jasmine-jquery-rails
   jasminerice!
   jbuilder (~> 2.0)
   jquery-rails

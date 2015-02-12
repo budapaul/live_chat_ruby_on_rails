@@ -3,7 +3,6 @@
 $ ->
   $("#button").click( 
     (e) ->
-     console.log("blaa")
      error =  window.button_click()
      if (error.trim() != '')
       e.preventDefault()
